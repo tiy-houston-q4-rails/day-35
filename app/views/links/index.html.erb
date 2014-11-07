@@ -1,7 +1,5 @@
 <h1>Links#index</h1>
 
-<% @links.each do |link| %>
-  <%= link_to link.url do %>
-    <%= image_tag link.photo.url(:thumb) %>
-  <% end %>
-<% end %>
+<div id="links">
+  <%= render partial: "links/links" %>
+</div>

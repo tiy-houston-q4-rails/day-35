@@ -1,0 +1,13 @@
+// did we save the link
+// else render the form again
+
+<% if @link.errors.any? %>
+  $("#link-form").html("<%= j render partial: 'links/form' %>");
+<% else %>
+
+
+  $("#newLinkModal").modal("hide");
+  $("#links").html("<%= j render partial: 'links/links' %>");
+  $("#link-form").html("<%= j render partial: 'links/form' %>");
+
+<% end %>
