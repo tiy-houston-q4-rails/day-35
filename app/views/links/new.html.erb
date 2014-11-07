@@ -1,0 +1,8 @@
+<h1>Links#new</h1>
+
+<%= simple_form_for @link do |f| %>
+  <%= f.input :url %>
+  <%= f.input :photo %>
+  <%= f.input :notes %>
+  <%= f.submit class: "btn btn-lg btn-primary" %>
+<% end %>
